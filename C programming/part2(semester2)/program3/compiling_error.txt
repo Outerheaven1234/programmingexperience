@@ -1,0 +1,16 @@
+In file included from C:\Users\vibis\OneDrive - University of Massachusetts Lowell - UMass Lowell\College Freshman\Computing 1020\C  Programs2\program3\main.c:3:0:
+C:\Users\vibis\OneDrive - University of Massachusetts Lowell - UMass Lowell\College Freshman\Computing 1020\C  Programs2\program3\minHeap.c:91:6: error: conflicting types for 'min_heap_destroy'
+ void min_heap_destroy(MIN_HEAP** phminHeap)
+      ^~~~~~~~~~~~~~~~
+In file included from C:\Users\vibis\OneDrive - University of Massachusetts Lowell - UMass Lowell\College Freshman\Computing 1020\C  Programs2\program3\main.c:2:0:
+C:\Users\vibis\OneDrive - University of Massachusetts Lowell - UMass Lowell\College Freshman\Computing 1020\C  Programs2\program3\minHeap.h:31:6: note: previous declaration of 'min_heap_destroy' was here
+ void min_heap_destroy(MIN_HEAP* phminHeap);
+      ^~~~~~~~~~~~~~~~
+C:\Users\vibis\OneDrive - University of Massachusetts Lowell - UMass Lowell\College Freshman\Computing 1020\C  Programs2\program3\main.c: In function 'main':
+C:\Users\vibis\OneDrive - University of Massachusetts Lowell - UMass Lowell\College Freshman\Computing 1020\C  Programs2\program3\main.c:35:19: warning: passing argument 1 of 'min_heap_destroy' from incompatible pointer type [-Wincompatible-pointer-types]
+  min_heap_destroy(&heap);
+                   ^
+In file included from C:\Users\vibis\OneDrive - University of Massachusetts Lowell - UMass Lowell\College Freshman\Computing 1020\C  Programs2\program3\main.c:3:0:
+C:\Users\vibis\OneDrive - University of Massachusetts Lowell - UMass Lowell\College Freshman\Computing 1020\C  Programs2\program3\minHeap.c:91:6: note: expected 'void ***' but argument is of type 'void **'
+ void min_heap_destroy(MIN_HEAP** phminHeap)
+      ^~~~~~~~~~~~~~~~
